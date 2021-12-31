@@ -1,6 +1,6 @@
 {
   "name": "zenbeat",
-	"displayName": "ZenBeat",
+	"displayName": "ZenBeat Local Music",
 	"version": "0.0.1",
 	"publisher": "AnuragYadav365",
 	"description": "ZenBeat is a VS Code extension that serves you the music f your choice to be more productive.",
@@ -28,7 +28,8 @@
 		"productivity"
 	],
 	"activationEvents": [
-        "onCommand:zenbeat.helloWorld"
+        "onCommand:zenbeat.helloWorld",
+		"onCommand:zenbeat.openFolderToPlay"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -36,9 +37,26 @@
 			{
 				"command": "zenbeat.helloWorld",
 				"title": "Zenbeat"
+			},
+			{
+			  "command": "zenbeat.openFolderToPlay",
+			  "title": "Open Folder To Play Music"
+			}
+		],
+		"keybindings": [
+			{
+			  "command": "zenbeat.helloWorld",
+			  "key": "ctrl+z+a",
+			  "mac": "cmd+z+a"
+			},
+			{
+			  "command": "zenbeat.openFolderToPlay",
+			  "key": "ctrl+z+b",
+			  "mac": "cmd+z+b"
 			}
 		]
 	},
+
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
