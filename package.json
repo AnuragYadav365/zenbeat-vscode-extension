@@ -1,13 +1,31 @@
 {
   "name": "zenbeat",
 	"displayName": "ZenBeat",
-	"description": "",
 	"version": "0.0.1",
+	"publisher": "AnuragYadav365",
+	"description": "ZenBeat is a VS Code extension that serves you the music f your choice to be more productive.",
+  	"repository": {
+		"type": "git",
+    	"url": "https://github.com/AnuragYadav365/zenbeat-vscode-extension"
+	},
+	"author": {
+		"name": "AnuragYadav365"
+	},
+	"icon": "images/Music-icon.png",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
 	"categories": [
 		"Other"
+	],
+	"keywords": [
+		"spotify",
+		"music",
+		"lofi",
+		"stream-music",
+		"player",
+		"songs",
+		"productivity"
 	],
 	"activationEvents": [
         "onCommand:zenbeat.helloWorld"
@@ -17,7 +35,7 @@
 		"commands": [
 			{
 				"command": "zenbeat.helloWorld",
-				"title": "Hello World"
+				"title": "Zenbeat"
 			}
 		]
 	},
