@@ -54,7 +54,21 @@
 			  "key": "ctrl+z+b",
 			  "mac": "cmd+z+b"
 			}
-		]
+		],
+
+		"viewsContainers": {
+			"activitybar": [{
+			  "id": "Zenbeat",
+			  "title": "Zenbeat Music",
+			  "icon": "images/Music-icon.png"
+			}]
+		},
+		"views": {
+			"Zenbeat": [{
+			  "id": "RandomID",
+			  "name": "ZenBeatMusic"
+			}]
+		}
 	},
 
 	"scripts": {

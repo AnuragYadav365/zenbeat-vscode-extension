@@ -3,7 +3,6 @@
 import * as vscode from 'vscode';
 import * as play_func from './sampletest';
 
-
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -20,9 +19,9 @@ export function activate(context: vscode.ExtensionContext) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from ZenBeat!');
 	});
-
-	context.subscriptions.push(disposable);
 	
+	context.subscriptions.push(disposable);
+
 	vscode.commands.registerCommand('zenbeat.openFolderToPlay', () => play_func.openDirectory());
 }
 
